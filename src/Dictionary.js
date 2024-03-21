@@ -6,14 +6,14 @@ export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
 
   function handleResponse(response) {
-    console.log(response);
+    console.log(response.data[0]);
   }
 
   function search(event) {
     event.preventDefault();
-    alert(`searching for ${keyword} definition`);
 
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=sunset&key=f42atbc02aod4017c837cbfe1c70ef22`;
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    console.log(apiUrl);
     axios.get(apiUrl).then(handleResponse);
   }
 
