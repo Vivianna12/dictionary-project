@@ -13,7 +13,21 @@ export default function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <small>Coded by Vivianna Samite Estevez</small>
+          <small>
+            Coded by{" "}
+            <a href="https://github.com/Vivianna12" target="blank">
+              Vivianna Samite Estevez
+            </a>{" "}
+            is open sourced on{" "}
+            <a
+              href="https://github.com/Vivianna12/dictionary-project"
+              target="blank"
+            >
+              {" "}
+              Github
+            </a>{" "}
+            and hosted on Netlify
+          </small>
         </footer>
       </div>
     </div>
